@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found | Major RB Properties</title>
+    <link rel="icon" type="image/png" href="./Major-RB-logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui"],
+              serif: ["Playfair Display", "ui-serif", "Georgia"],
+              thunder: ["Thunder", "Bebas Neue", "Impact", "sans-serif"],
+            },
+            colors: {
+              accent: "#E6501B",
+              brand: {
+                700: "#740A03",
+                800: "#5d0903",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-white font-sans text-slate-900 flex items-center justify-center">
+    <div class="max-w-md w-full px-6 text-center">
+      <div class="hero-animate flex justify-center mb-8" data-delay="1">
+        <img src="Major-RB-logo.png" alt="Major RB Properties" class="h-24 w-auto" />
+      </div>
+      <h1 class="hero-animate font-thunder text-6xl font-bold uppercase text-brand-700" data-delay="2">404</h1>
+      <p class="hero-animate mt-4 text-xl font-serif" data-delay="3">Oops! Page not found.</p>
+      <p class="hero-animate mt-2 text-slate-600" data-delay="4">The page you're looking for doesn't exist or has been moved.</p>
+      <div class="hero-animate mt-10" data-delay="5">
+        <a href="index.html" class="inline-flex items-center justify-center rounded-full bg-brand-700 px-8 py-4 text-sm font-bold uppercase tracking-widest text-white shadow-lg transition-all hover:bg-brand-800 hover:scale-105">
+          Go Back Home
+        </a>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
